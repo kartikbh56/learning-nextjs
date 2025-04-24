@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ReactNode } from "react";
 
 export default async function Page({
@@ -10,7 +11,7 @@ export default async function Page({
   const userData = await fetch("https://api.github.com/users/" + slug).then(
     (res) => res.json()
   );
-
+  
   return (
     <div className="text-center font-mono">
       UserId: {slug}
